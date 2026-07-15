@@ -1,8 +1,8 @@
 import {
-  generateIconColor,
   formatDownloads,
   formatSize,
   formatStars,
+  generateIconColor,
 } from "@/lib/utils" 
 
 // ─── generateIconColor ────────────────────────────────────────────────────────

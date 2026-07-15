@@ -1,10 +1,10 @@
-import { fetchNpmPackage } from "@/services/api/npm"
-import { fetchDownloads } from "@/services/api/downloads"
-import { fetchBundle } from "@/services/api/bundlephobia"
-import { fetchGithubRepo } from "@/services/api/github"
-import type { PackageSummary } from "@/types/global"
 import { POPULAR_PACKAGES } from "@/config/popular-packages"
 import { extractGithubRepo } from "@/lib/github"
+import { fetchBundle } from "@/services/api/bundlephobia"
+import { fetchDownloads } from "@/services/api/downloads"
+import { fetchGithubRepo } from "@/services/api/github"
+import { fetchNpmPackage } from "@/services/api/npm"
+import type { PackageSummary } from "@/types/global"
 
 
 export async function getPackageSummary(name: string): Promise<PackageSummary> {

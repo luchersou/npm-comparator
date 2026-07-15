@@ -1,21 +1,23 @@
 "use client"
 
+import {
+  Check,
+  ExternalLink,
+  GitBranch,
+  Plus,
+  Scale,
+  User,
+} from "lucide-react"
+import Link from "next/link"
+
+import { GithubIcon } from "@/components/shared/icons"
 import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
 import { Separator } from "@/components/ui/separator"
 import { useCompareStore } from "@/store/compare.store"
 import type { PackageDetails } from "@/types/global"
-import { GithubIcon } from "@/components/shared/icons"
+
 import { Container } from "../layout/container"
-import {
-  ExternalLink,
-  Plus,
-  Check,
-  Scale,
-  User,
-  GitBranch,
-} from "lucide-react"
-import Link from "next/link"
 
 interface PackageHeroProps {
   pkg: PackageDetails

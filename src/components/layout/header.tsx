@@ -1,11 +1,12 @@
 "use client";
 
-import { useEffect, useState } from "react";
-import { useTheme } from "next-themes";
 import { Moon, Sun } from "lucide-react";
-import { cn } from "@/lib/utils";
-import { GithubIcon } from "@/components/shared/icons";
 import Link from "next/link";
+import { useTheme } from "next-themes";
+import { useEffect, useState } from "react";
+
+import { GithubIcon } from "@/components/shared/icons";
+import { cn } from "@/lib/utils";
 
 export function Header() {
   const [scrolled, setScrolled] = useState(false);

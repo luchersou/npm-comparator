@@ -1,7 +1,7 @@
-import type { ComparisonCardData } from "@/types/compare"
 import { POPULAR_COMPARISONS } from "@/config/popular-comparisons"
-import { fetchDownloadsByPeriod } from "@/services/api/downloads"
 import { fetchBundle } from "@/services/api/bundlephobia"
+import { fetchDownloadsByPeriod } from "@/services/api/downloads"
+import type { ComparisonCardData } from "@/types/compare"
 import type { PackageSnapshot } from "@/types/compare"
 
 async function fetchPackageSnapshot(name: string): Promise<PackageSnapshot> {

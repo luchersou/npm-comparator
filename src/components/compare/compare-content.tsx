@@ -1,8 +1,10 @@
-import { getPackageDetails } from "@/services/queries/package-details"
+import { notFound } from "next/navigation"
+
 import { CompareHeader } from "@/components/compare/compare-header"
 import { CompareStatsTable } from "@/components/compare/compare-stats-table"
 import { CompareVerdict } from "@/components/compare/compare-verdict"
-import { notFound } from "next/navigation"
+import { getPackageDetails } from "@/services/queries/package-details"
+
 import { CompareFadeSection } from "./compare-fade-section"
 
 interface CompareContentProps {

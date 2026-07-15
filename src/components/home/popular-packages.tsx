@@ -1,12 +1,13 @@
 "use client"
 
-import { motion } from "motion/react"
 import { Link, Package } from "lucide-react"
+import { motion } from "motion/react"
+
+import { PackageCard } from "@/components/home/popular-package-card"
 import { Container } from "@/components/layout/container"
 import { Section } from "@/components/layout/section"
-import { PackageCard } from "@/components/home/popular-package-card"
-import type { PackageSummary } from "@/types/global"
 import { useCompareStore } from "@/store/compare.store"
+import type { PackageSummary } from "@/types/global"
 
 const MOBILE_VISIBLE_LIMIT = 6
 

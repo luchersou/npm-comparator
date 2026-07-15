@@ -1,12 +1,13 @@
 "use client";
 
-import { CommandItem } from "@/components/ui/command";
-import { Button } from "@/components/ui/button";
+import { Check,Plus } from "lucide-react";
 import { useRouter } from "next/navigation";
-import { NpmSearchResult } from "@/types/npm";
-import { useCompareStore } from "@/store/compare.store";
-import { Plus, Check } from "lucide-react";
+
+import { Button } from "@/components/ui/button";
+import { CommandItem } from "@/components/ui/command";
 import { generateIconColor } from "@/lib/utils";
+import { useCompareStore } from "@/store/compare.store";
+import { NpmSearchResult } from "@/types/npm";
 
 export function SearchItem({ pkg, onSelect }: { pkg: NpmSearchResult; onSelect: () => void }) {
   const router = useRouter();

@@ -1,20 +1,21 @@
 import {
+  Calendar,
+  Globe,
+  Package,
+  Scale,
+  User,
+} from "lucide-react"
+import Link from "next/link"
+
+import { GithubIcon } from "@/components/shared/icons"
+import { Badge } from "@/components/ui/badge"
+import {
   Card,
   CardContent,
   CardHeader,
   CardTitle,
 } from "@/components/ui/card"
-import { Badge } from "@/components/ui/badge"
 import { PackageDetails } from "@/types/global"
-import {
-  Scale,
-  Calendar,
-  Globe,
-  Package,
-  User,
-} from "lucide-react"
-import Link from "next/link"
-import { GithubIcon } from "@/components/shared/icons"
 
 const accentColors = [
   "var(--gradient-accent-1)",

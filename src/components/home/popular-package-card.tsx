@@ -1,7 +1,8 @@
-import { Button } from "@/components/ui/button"
-import { Card, CardContent, CardFooter, CardHeader } from "@/components/ui/card"
 import { Download, Plus, Star, Weight } from "lucide-react"
 import Link from "next/link"
+
+import { Button } from "@/components/ui/button"
+import { Card, CardContent, CardFooter, CardHeader } from "@/components/ui/card"
 import { formatDownloads, formatSize, formatStars } from "@/lib/utils"
 import { generateIconColor } from "@/lib/utils"
 

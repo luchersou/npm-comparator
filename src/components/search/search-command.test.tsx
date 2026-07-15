@@ -1,6 +1,8 @@
-import { render, screen, fireEvent } from "@testing-library/react"
-import { SearchCommand } from "./search-command"
+import { fireEvent,render, screen } from "@testing-library/react"
+
 import { useSearch } from "@/features/search/use-search"
+
+import { SearchCommand } from "./search-command"
 
 // ─── mocks ────────────────────────────────────────────────────────────────────
 

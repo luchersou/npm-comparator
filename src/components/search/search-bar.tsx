@@ -1,7 +1,8 @@
 "use client";
 
-import { useState } from "react";
 import { Search } from "lucide-react";
+import { useState } from "react";
+
 import { SearchCommand } from "./search-command";
 
 export function SearchBar() {

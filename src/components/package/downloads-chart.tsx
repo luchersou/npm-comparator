@@ -1,7 +1,7 @@
 "use client"
 
-import { formatDownloads } from "@/lib/utils"
 import { Bar, BarChart, CartesianGrid, XAxis, YAxis } from "recharts"
+
 import {
   Card,
   CardContent,
@@ -15,6 +15,7 @@ import {
   ChartTooltip,
   ChartTooltipContent,
 } from "@/components/ui/chart"
+import { formatDownloads } from "@/lib/utils"
 import { PackageDetails } from "@/types/global"
 
 interface DownloadsChartProps {

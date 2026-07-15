@@ -1,6 +1,8 @@
 import { useQuery } from "@tanstack/react-query";
-import { searchPackages } from "./search.service";
+
 import { NpmSearchResult } from "@/types/npm";
+
+import { searchPackages } from "./search.service";
 
 export function useSearch(query: string) {
   return useQuery<NpmSearchResult[], Error>({

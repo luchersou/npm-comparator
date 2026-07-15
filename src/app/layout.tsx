@@ -1,13 +1,15 @@
+import "./globals.css";
+
 import type { Metadata } from "next";
 import { DM_Sans, Space_Mono } from "next/font/google";
-import "./globals.css";
-import { cn } from "@/lib/utils";
-import { QueryProvider } from "@/providers/query-provider";
-import { ThemeProvider } from "@/providers/theme-provider";
-import { Header } from "@/components/layout/header";
+
 import { CompareFloatingBar } from "@/components/global/compare-floating-bar";
 import { ScrollToTop } from "@/components/global/scroll-to-top";
 import { ScrollToTopOnNavigate } from "@/components/global/scroll-to-top-on-navigate";
+import { Header } from "@/components/layout/header";
+import { cn } from "@/lib/utils";
+import { QueryProvider } from "@/providers/query-provider";
+import { ThemeProvider } from "@/providers/theme-provider";
 
 const dmSans = DM_Sans({
   subsets: ["latin"],

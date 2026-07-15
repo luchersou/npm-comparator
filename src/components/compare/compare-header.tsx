@@ -1,9 +1,10 @@
+import { ExternalLink,GitCompareArrows } from "lucide-react"
+import Link from "next/link"
+
 import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
-import { PackageDetails } from "@/types/global"
 import { generateIconColor } from "@/lib/utils"
-import { GitCompareArrows, ExternalLink } from "lucide-react"
-import Link from "next/link"
+import { PackageDetails } from "@/types/global"
 
 interface CompareHeaderProps {
   pkgA: PackageDetails

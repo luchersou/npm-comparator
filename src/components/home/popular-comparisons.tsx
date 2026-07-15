@@ -1,14 +1,16 @@
 "use client"
 
-import { useState } from "react"
-import { motion } from "motion/react"
 import { GitCompare } from "lucide-react"
+import { motion } from "motion/react"
+import { useState } from "react"
+
+import { Container } from "@/components/layout/container"
+import { Section } from "@/components/layout/section"
 import { Button } from "@/components/ui/button"
 import { useMediaQuery } from "@/hooks/use-media-query"
-import { ComparisonCard } from "./comparison-card"
-import { Section } from "@/components/layout/section"
-import { Container } from "@/components/layout/container"
 import type { ComparisonCardData } from "@/types/compare"
+
+import { ComparisonCard } from "./comparison-card"
 
 const INITIAL_VISIBLE_DESKTOP = 6
 const INITIAL_VISIBLE_MOBILE = 3

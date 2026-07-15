@@ -1,4 +1,5 @@
 import { Suspense } from "react"
+
 import { CompareContent } from "@/components/compare/compare-content"
 import { CompareContentSkeleton } from "@/components/compare/compare-content-skeleton"
 

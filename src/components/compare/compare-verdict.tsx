@@ -1,23 +1,24 @@
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
-import { Badge } from "@/components/ui/badge"
-import { PackageDetails } from "@/types/global"
-import { 
-	getDownloadsInsight, 
-	getCommunityInsight, 
-	getBundleInsight,
-	getMaintenanceInsight,
-	computeVerdict,
-	verdictSummary,
-} from "@/lib/verdict"
 import {
-  Trophy,
-  Minus,
 	Activity,
+	Download,
+  Minus,
 	Package,
 	Star,
-	Download,
+  Trophy,
 } from "lucide-react"
+
+import { Badge } from "@/components/ui/badge"
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { generateIconColor } from "@/lib/utils"
+import { 
+	computeVerdict,
+	getBundleInsight,
+	getCommunityInsight, 
+	getDownloadsInsight, 
+	getMaintenanceInsight,
+	verdictSummary,
+} from "@/lib/verdict"
+import { PackageDetails } from "@/types/global"
 import { Insight } from "@/types/verdict"
 
 const categoryIcons: Record<string, React.ReactNode> = {

@@ -1,5 +1,5 @@
-import { PackageDetails } from "@/types/global"
 import { formatDownloads, formatSize } from "@/lib/utils"
+import { PackageDetails } from "@/types/global"
 import type { Insight, VerdictResult, VerdictSide } from "@/types/verdict"
 
 export function getDownloadsInsight(pkgA: PackageDetails, pkgB: PackageDetails): Insight | null {

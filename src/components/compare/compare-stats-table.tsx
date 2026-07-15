@@ -1,15 +1,16 @@
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
-import { PackageDetails } from "@/types/global"
-import { formatDownloads, formatSize } from "@/lib/utils"
 import {
-  Download,
-  Star,
-  GitFork,
-  CircleDot,
-  Scale,
   Calendar,
+  CircleDot,
+  Download,
+  GitFork,
   Package,
+  Scale,
+  Star,
 } from "lucide-react"
+
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
+import { formatDownloads, formatSize } from "@/lib/utils"
+import { PackageDetails } from "@/types/global"
 
 interface CompareStatsTableProps {
   pkgA: PackageDetails

@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "motion/react";
+
 import { SearchBar } from "@/components/search/search-bar";
 
 const fadeUp = {

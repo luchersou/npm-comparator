@@ -1,4 +1,5 @@
 import { Suspense } from "react"
+
 import { PackageContent } from "@/components/package/package-content"
 import { PackageContentSkeleton } from "@/components/package/package-content-skeleton"
 

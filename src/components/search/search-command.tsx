@@ -1,23 +1,23 @@
 "use client";
 
+import { useState } from "react";
+
+import { ErrorState } from "@/components/shared/error-state";
+import {
+  Command,
+  CommandEmpty,
+  CommandInput,
+  CommandList,
+} from "@/components/ui/command";
 import {
   Dialog,
   DialogContent,
 } from "@/components/ui/dialog";
-
-import {
-  Command,
-  CommandInput,
-  CommandList,
-  CommandEmpty,
-} from "@/components/ui/command";
-
 import { useSearch } from "@/features/search/use-search";
 import { useDebounce } from "@/hooks/use-debounce";
+
 import { SearchItem } from "./search-item";
 import { SearchSkeleton } from "./search-skeleton";
-import { ErrorState } from "@/components/shared/error-state";
-import { useState } from "react";
 
 interface SearchCommandProps {
   open: boolean;

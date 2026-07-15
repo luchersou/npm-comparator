@@ -1,4 +1,5 @@
 import { NextResponse } from "next/server";
+
 import { NpmSearchResult } from "@/types/npm";
 
 const BASE_NPM = "https://registry.npmjs.org/-/v1/search";

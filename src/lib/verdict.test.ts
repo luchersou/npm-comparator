@@ -1,11 +1,10 @@
 import { 
-  getDownloadsInsight, 
-  getCommunityInsight, 
-  getMaintenanceInsight, 
+  computeVerdict, 
   getBundleInsight, 
-  verdictSummary, 
-  computeVerdict 
-} from "@/lib/verdict"
+  getCommunityInsight, 
+  getDownloadsInsight, 
+  getMaintenanceInsight, 
+  verdictSummary} from "@/lib/verdict"
 import type { PackageDetails } from "@/types/global"
 import { Insight } from "@/types/verdict"
 

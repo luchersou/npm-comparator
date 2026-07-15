@@ -1,10 +1,11 @@
 "use client"
 
-import { useCompareStore } from "@/store/compare.store"
-import { useRouter } from "next/navigation"
-import { X, GitCompareArrows, Plus } from "lucide-react"
-import { Button } from "@/components/ui/button"
 import { AnimatePresence, motion } from "framer-motion"
+import { GitCompareArrows, Plus,X } from "lucide-react"
+import { useRouter } from "next/navigation"
+
+import { Button } from "@/components/ui/button"
+import { useCompareStore } from "@/store/compare.store"
 
 function PackageSlot({ name, onRemove }: { name: string; onRemove: () => void }) {
   return (

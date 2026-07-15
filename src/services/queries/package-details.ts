@@ -1,9 +1,9 @@
-import { fetchNpmPackage } from "@/services/api/npm"
-import { fetchDownloads } from "@/services/api/downloads"
-import { fetchBundle } from "@/services/api/bundlephobia"
-import { fetchGithubRepo } from "@/services/api/github"
-import { PackageDetails } from "@/types/global"
 import { extractGithubRepo } from "@/lib/github"
+import { fetchBundle } from "@/services/api/bundlephobia"
+import { fetchDownloads } from "@/services/api/downloads"
+import { fetchGithubRepo } from "@/services/api/github"
+import { fetchNpmPackage } from "@/services/api/npm"
+import { PackageDetails } from "@/types/global"
 
 export async function getPackageDetails(name: string): Promise<PackageDetails> {
   const npmData = await fetchNpmPackage(name)

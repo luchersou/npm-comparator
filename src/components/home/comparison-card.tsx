@@ -1,7 +1,8 @@
 import Link from "next/link"
+
 import { Card, CardContent } from "@/components/ui/card"
-import { ComparisonCardData } from "@/types/compare"
 import { formatDownloads, formatSize } from "@/lib/utils"
+import { ComparisonCardData } from "@/types/compare"
 
 function DownloadBar({
   valueA,

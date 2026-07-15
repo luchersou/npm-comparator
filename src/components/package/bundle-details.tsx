@@ -1,8 +1,9 @@
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
+import { AlertTriangle, CheckCircle,PackageOpen, Zap } from "lucide-react"
+
 import { Badge } from "@/components/ui/badge"
-import { PackageDetails } from "@/types/global"
-import { PackageOpen, Zap, AlertTriangle, CheckCircle } from "lucide-react"
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { formatSize } from "@/lib/utils"
+import { PackageDetails } from "@/types/global"
 
 interface BundleDetailsProps {
   pkg: PackageDetails

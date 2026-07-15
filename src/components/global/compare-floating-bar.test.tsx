@@ -1,6 +1,8 @@
-import { render, screen, fireEvent } from "@testing-library/react"
-import { CompareFloatingBar } from "./compare-floating-bar"
+import { fireEvent,render, screen } from "@testing-library/react"
+
 import { useCompareStore } from "@/store/compare.store"
+
+import { CompareFloatingBar } from "./compare-floating-bar"
 
 // ─── mocks ────────────────────────────────────────────────────────────────────
 

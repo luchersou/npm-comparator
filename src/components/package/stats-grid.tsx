@@ -1,14 +1,16 @@
+import {
+  CircleDot,
+  Download,
+  FileCode,
+  GitFork,
+  Star,
+  Zap,
+} from "lucide-react"
+
 import { Card, CardContent } from "@/components/ui/card"
 import { formatDownloads, formatSize, formatStars } from "@/lib/utils"
 import type { PackageDetails } from "@/types/global"
-import {
-  Download,
-  Star,
-  GitFork,
-  CircleDot,
-  FileCode,
-  Zap,
-} from "lucide-react"
+
 import { Container } from "../layout/container"
 import { Section } from "../layout/section"
 

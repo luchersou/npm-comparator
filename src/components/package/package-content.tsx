@@ -1,10 +1,11 @@
-import { getPackageDetails } from "@/services/queries/package-details"
-import { PackageHero } from "@/components/package/package-hero"
-import { StatsGrid } from "@/components/package/stats-grid"
-import { DownloadsChart } from "@/components/package/downloads-chart"
-import { PackageMetadata } from "@/components/package/package-metadata"
-import { BundleDetails } from "@/components/package/bundle-details"
 import { notFound } from "next/navigation"
+
+import { BundleDetails } from "@/components/package/bundle-details"
+import { DownloadsChart } from "@/components/package/downloads-chart"
+import { PackageHero } from "@/components/package/package-hero"
+import { PackageMetadata } from "@/components/package/package-metadata"
+import { StatsGrid } from "@/components/package/stats-grid"
+import { getPackageDetails } from "@/services/queries/package-details"
 
 interface PackageContentProps {
   params: Promise<{ name: string }>
